@@ -13,7 +13,7 @@ const Register= () => {
 
     <div className="h-screen bg-primary flex items-center justify-center">
 
-        <div className="bg-white shadow-md p-7 flex flex-col gap-3 w-96">
+        <div className="bg-white shadow-md p-7 flex flex-col gap-5 w-96">
             <h1 className="text-2xl font-bold uppercase"> Chat</h1>
  
 
@@ -39,7 +39,7 @@ const Register= () => {
        onChange={(e) => setUser({...user, password: e.target.value})}
        />
 
-       <button>Register</button>
+       <button className="contained-btn">Register</button>
 
 </div>
       

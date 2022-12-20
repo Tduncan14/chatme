@@ -25,10 +25,24 @@ input{
 }
 
 
-input:focus:{
+input:focus{
   outline:none;
   border:solid,rgb(23,28,52);
 }
 
 
+.outlined-btn{
+  border:1px solid #4D426D;
+  color:#4D426D;
+  padding:5px 20px;
+}
+
+
+.contained-btn{
+  background-color:#4D426D;
+  color:white;
+  padding:5px 20px;
+  height:40px;
+
+}
 /* end of input fields */
