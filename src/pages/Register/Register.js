@@ -1,4 +1,5 @@
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom'
 
 const Register= () => {
 
@@ -8,6 +9,11 @@ const Register= () => {
         password:''
     })
 
+    const register = async (e) => {
+        e.preventDefault();
+
+        console.log(user)
+    }
 
   return (
 
@@ -33,13 +39,20 @@ const Register= () => {
        onChange={(e) => setUser({...user, email: e.target.value})}
        />
           <input
-       type="text"
+       type="password"
        value={user.password}
        placeholder="Enter your password"
        onChange={(e) => setUser({...user, password: e.target.value})}
        />
 
-       <button className="contained-btn">Register</button>
+       <button
+        onClick={register}
+       className="contained-btn">Register</button>
+
+
+       <Link to="/login">
+       Already have an account  ?
+       </Link>
 
 </div>
       
